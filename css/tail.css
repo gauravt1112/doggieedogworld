@@ -1,0 +1,53 @@
+.tail{
+background-image: url('../images/facilities/Tails.png');
+height: 31px;
+left: 246px;
+position: relative;
+margin-top: -75px;
+width: 20px;
+-webkit-animation: mymove 1s infinite;
+ animation: mymove 1s infinite;
+	
+   
+}
+.tail-dc{
+background-image: url('../images/facilities/Tails.png');
+height: 31px;
+left: 253px;
+position: relative;
+margin-top: -56px;
+width: 20px;
+-webkit-animation: mymove 1s infinite;
+ animation: mymove 1s infinite;
+	
+   
+}
+.tail-dc2{
+background-image: url('../images/facilities/Tails.png');
+height: 31px;
+left: 252px;
+position: relative;
+margin-top: -57px;
+width: 20px;
+-webkit-animation: mymove 1s infinite;
+ animation: mymove 1s infinite;
+	
+   
+}
+
+
+	
+@-webkit-keyframes mymove {
+    0%   {background-image:url('../images/facilities/Tails.png');}
+	
+    100% {background-image:url('../images/facilities/Tail.png');}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+     0%   {background-image:url('../images/facilities/Tails.png');}
+
+    100% {background-image:url('../images/facilities/Tails.png');}
+}
+/*end of bubble animations*/
+

@@ -1,0 +1,41 @@
+.board{
+background-image: url('../images/facilities/Board.png');
+height: 26px;
+left: 321px;
+position: relative;
+margin-top: -100px;
+width: 44px;
+-webkit-animation: myboard 3s infinite;
+ animation: myboard 3s infinite;
+	
+   
+}
+.board-dc{
+background-image: url('../images/facilities/Board.png');
+height: 26px;
+left: 321px;
+position: relative;
+margin-top: -98px;
+width: 44px;
+-webkit-animation: myboard 3s infinite;
+ animation: myboard 3s infinite;
+	
+   
+}
+
+
+	
+@-webkit-keyframes myboard {
+    0%   {background-image:url('../images/facilities/Board.png');}
+
+    100% {background-image:url('../images/facilities/Boards.png');}
+}
+
+/* Standard syntax */
+@keyframes myboard {
+     0%   {background-image:url('../images/facilities/Board.png');}
+
+    100% {background-image:url('../images/facilities/Boards.png');}
+}
+/*end of bubble animations*/
+

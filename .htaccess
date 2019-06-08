@@ -1,0 +1,8 @@
+# BEGIN non-WWW to WWW
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} !^www.
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+</IfModule>
+# END non-WWW to WWW
