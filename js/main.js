@@ -61,7 +61,7 @@ $(document).ready(function(){
     width: "855px",
     // height: "432px"//,
     height: "413px"//,
-    // href:"news-media-details.php"
+    // href:"news-media-details.html"
   });
 
   
@@ -175,7 +175,7 @@ function submitFrom(form) {
     $("form#"+form.id+" input:submit").addClass('sending');
     $("form#"+form.id+" input:submit").val('SENDING ...');
   //console.log(formData);
-  $.post("form_submit_contact.php",  formData , function(data) {
+  $.post("form_submit_contact.html",  formData , function(data) {
     if(data.status=='success') {
       //obj.hide();
       //obj.parent().append(data.message);
@@ -184,7 +184,7 @@ function submitFrom(form) {
       $("form#"+form.id+" input:submit").val('MESSAGE SENT');
       $("form#"+form.id+" input:submit").animate({'opacity': '0.5'});
       $("form#"+form.id+" input:submit").attr('disabled', 'disabled');
-	  $(location).attr('href','thank-you.php');
+	  $(location).attr('href','thank-you.html');
     } else {
       obj.hide();
       obj.parent().append(data.message);
@@ -199,7 +199,7 @@ function submitFrom2(form) {
     $("form#"+form.id+" input:submit").addClass('sending');
     $("form#"+form.id+" input:submit").val('SENDING ...');
   //console.log(formData);
-  $.post("form_submit_contactable_contactForm.php",  formData , function(data) {
+  $.post("form_submit_contactable_contactForm.html",  formData , function(data) {
     if(data.status=='success') {
       //obj.hide();
       //obj.parent().append(data.message);
@@ -208,7 +208,7 @@ function submitFrom2(form) {
       $("form#"+form.id+" input:submit").val('MESSAGE SENT');
       $("form#"+form.id+" input:submit").animate({'opacity': '0.5'});
       $("form#"+form.id+" input:submit").attr('disabled', 'disabled');
-	  $(location).attr('href','thank-you.php');
+	  $(location).attr('href','thank-you.html');
     } else {
       obj.hide();
       obj.parent().append(data.message);
